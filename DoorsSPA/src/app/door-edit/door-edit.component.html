@@ -1,0 +1,29 @@
+<!-- src/app/door-edit/door-edit.component.html -->
+<h1 mat-dialog-title>Edit Door</h1>
+<div mat-dialog-content>
+  <mat-form-field appearance="fill">
+    <mat-label>Open State</mat-label>
+    <mat-select [(value)]="data.isOpen">
+      <mat-option value="Open">Open</mat-option>
+      <mat-option value="Closed">Closed</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Locked State</mat-label>
+    <mat-select [(value)]="data.isLocked">
+      <mat-option value="Locked">Locked</mat-option>
+      <mat-option value="Unlocked">Unlocked</mat-option>
+    </mat-select>
+  </mat-form-field>
+  <mat-form-field appearance="fill">
+    <mat-label>Alarmed State</mat-label>
+    <mat-select [(value)]="data.isAlarmed">
+      <mat-option value="Inactive">Inactive</mat-option>
+      <mat-option value="Alarmed">Alarmed</mat-option>
+    </mat-select>
+  </mat-form-field>
+</div>
+<div mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Cancel</button>
+  <button mat-button [mat-dialog-close]="data">Save</button>
+</div>

@@ -1,0 +1,21 @@
+/* src/app/doors/doors.component.css */
+.door-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin: 16px;
+}
+
+.door-card {
+  width: 300px;
+  border: 1px solid #e0e0e0;
+}
+
+.alarmed {
+  border: 1px solid red;
+}
+
+.mat-card-header {
+  background-color: #f5f5f5;
+}

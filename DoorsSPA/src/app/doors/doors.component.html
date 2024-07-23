@@ -1,0 +1,19 @@
+<!-- src/app/doors/doors.component.html -->
+<div class="door-container">
+  <mat-card *ngFor="let door of doors" class="door-card" [ngClass]="{'alarmed': door.isAlarmed === 'Alarmed'}">
+    <mat-card-header>
+      <mat-card-title>{{ door.name }}</mat-card-title>
+      <mat-card-subtitle>State: {{ door.isOpen }}, {{ door.isLocked }}, {{ door.isAlarmed }}</mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <p>
+        <strong>Open: </strong> {{ door.isOpen }} <br>
+        <strong>Locked: </strong> {{ door.isLocked }} <br>
+        <strong>Alarmed: </strong> {{ door.isAlarmed }}
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button color="primary" (click)="openEditDialog(door)">Edit</button>
+    </mat-card-actions>
+  </mat-card>
+</div>

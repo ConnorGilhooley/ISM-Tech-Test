@@ -12,9 +12,9 @@ namespace DoorsAPI.Controllers
     {
         private static List<Door> doors = new List<Door>
     {
-        new Door { Id = 1, Name = "Door One", IsOpen = "Open", IsLocked = "Unlocked", IsAlarmed = "Inactive" },
-        new Door { Id = 2, Name = "Door Two", IsOpen = "Closed", IsLocked = "Unlocked", IsAlarmed = "Inactive" },
-        new Door { Id = 3, Name = "Door Three", IsOpen = "Closed", IsLocked = "Locked", IsAlarmed = "Alarmed" }
+        new Door { Id = 0, Name = "Door One", IsOpen = "Open", IsLocked = "Unlocked", IsAlarmed = "Inactive" },
+        new Door { Id = 1, Name = "Door Two", IsOpen = "Closed", IsLocked = "Unlocked", IsAlarmed = "Inactive" },
+        new Door { Id = 2, Name = "Door Three", IsOpen = "Closed", IsLocked = "Locked", IsAlarmed = "Alarmed" }
     };
 
         [HttpGet]
@@ -45,7 +45,7 @@ namespace DoorsAPI.Controllers
             door.IsOpen = updatedDoor.IsOpen;
             door.IsLocked = updatedDoor.IsLocked;
             door.IsAlarmed = updatedDoor.IsAlarmed;
-            return NoContent();
+            return Ok();
         }
     }
 }

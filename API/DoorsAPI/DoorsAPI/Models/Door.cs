@@ -4,7 +4,10 @@ namespace DoorsAPI.Models
 {
     public class Door
     {
+        [Required]
         public int Id { get; set; }
+
+        [Required]
         public string Name { get; set; }
 
         [Required]

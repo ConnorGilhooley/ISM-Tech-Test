@@ -49,7 +49,7 @@ namespace DoorManagementAPI.Tests
         }
 
         [Fact]
-        public void UpdateDoor_ReturnsNoContent_WhenDoorIsUpdated()
+        public void UpdateDoor_ReturnsOK_WhenDoorIsUpdated()
         {
             // Arrange
             var updatedDoor = new Door { Id = 1, Name = "Door One", IsOpen = "Closed", IsLocked = "Locked", IsAlarmed = "Inactive" };
@@ -58,10 +58,11 @@ namespace DoorManagementAPI.Tests
             var result = _controller.UpdateDoor(1, updatedDoor);
 
             // Assert
-            Assert.IsType<NoContentResult>(result);
+            Assert.IsType<OkResult>(result);
             var door = _controller.GetDoor(1).Value;
             Assert.Equal("Closed", door.IsOpen);
             Assert.Equal("Locked", door.IsLocked);
+            Assert.Equal("Inactive", door.IsAlarmed);
         }
 
         [Fact]

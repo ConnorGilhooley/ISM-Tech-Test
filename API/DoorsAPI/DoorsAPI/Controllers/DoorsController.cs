@@ -8,8 +8,9 @@ namespace DoorsAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class DoorsController : ControllerBase
+    public class DoorsController : ControllerBase, IDoorsController
     {
+        //This should definitely be a database, but will do for now. I'd want to migrate a local DB with this information pre-inserted and access it that way.
         private static List<Door> doors = new List<Door>
     {
         new Door { Id = 0, Name = "Door One", IsOpen = "Open", IsLocked = "Unlocked", IsAlarmed = "Inactive" },

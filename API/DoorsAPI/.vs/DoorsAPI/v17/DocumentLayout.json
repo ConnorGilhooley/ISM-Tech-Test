@@ -3,12 +3,16 @@
   "WorkspaceRootPath": "C:\\Users\\cardg\\source\\repos\\ISMTest\\ISM-Tech-Test\\API\\DoorsAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{79A1A722-F930-451E-BC77-B0E0E2F0BF25}|DoorsAPI.Tests\\DoorsAPI.Tests.csproj|c:\\users\\cardg\\source\\repos\\ismtest\\ism-tech-test\\api\\doorsapi\\doorsapi.tests\\doorscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{79A1A722-F930-451E-BC77-B0E0E2F0BF25}|DoorsAPI.Tests\\DoorsAPI.Tests.csproj|solutionrelative:doorsapi.tests\\doorscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B7F88C41-DD33-4477-96AC-177A1CD39815}|DoorsAPI\\DoorsAPI.csproj|c:\\users\\cardg\\source\\repos\\ismtest\\ism-tech-test\\api\\doorsapi\\doorsapi\\controllers\\doorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B7F88C41-DD33-4477-96AC-177A1CD39815}|DoorsAPI\\DoorsAPI.csproj|solutionrelative:doorsapi\\controllers\\doorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B7F88C41-DD33-4477-96AC-177A1CD39815}|DoorsAPI\\DoorsAPI.csproj|c:\\users\\cardg\\source\\repos\\ismtest\\ism-tech-test\\api\\doorsapi\\doorsapi\\controllers\\idoorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B7F88C41-DD33-4477-96AC-177A1CD39815}|DoorsAPI\\DoorsAPI.csproj|solutionrelative:doorsapi\\controllers\\idoorscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{79A1A722-F930-451E-BC77-B0E0E2F0BF25}|DoorsAPI.Tests\\DoorsAPI.Tests.csproj|c:\\users\\cardg\\source\\repos\\ismtest\\ism-tech-test\\api\\doorsapi\\doorsapi.tests\\doorscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{79A1A722-F930-451E-BC77-B0E0E2F0BF25}|DoorsAPI.Tests\\DoorsAPI.Tests.csproj|solutionrelative:doorsapi.tests\\doorscontrollertests.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B7F88C41-DD33-4477-96AC-177A1CD39815}|DoorsAPI\\DoorsAPI.csproj|c:\\users\\cardg\\source\\repos\\ismtest\\ism-tech-test\\api\\doorsapi\\doorsapi\\models\\door.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,7 +42,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
+              "Title": "IDoorsController.cs",
+              "DocumentMoniker": "C:\\Users\\cardg\\source\\repos\\ISMTest\\ISM-Tech-Test\\API\\DoorsAPI\\DoorsAPI\\Controllers\\IDoorsController.cs",
+              "RelativeDocumentMoniker": "DoorsAPI\\Controllers\\IDoorsController.cs",
+              "ToolTip": "C:\\Users\\cardg\\source\\repos\\ISMTest\\ISM-Tech-Test\\API\\DoorsAPI\\DoorsAPI\\Controllers\\IDoorsController.cs",
+              "RelativeToolTip": "DoorsAPI\\Controllers\\IDoorsController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-07-25T08:44:52.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\cardg\\source\\repos\\ISMTest\\ISM-Tech-Test\\API\\DoorsAPI\\DoorsAPI\\appsettings.json",
               "RelativeDocumentMoniker": "DoorsAPI\\appsettings.json",
@@ -51,20 +68,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "DoorsControllerTests.cs",
               "DocumentMoniker": "C:\\Users\\cardg\\source\\repos\\ISMTest\\ISM-Tech-Test\\API\\DoorsAPI\\DoorsAPI.Tests\\DoorsControllerTests.cs",
               "RelativeDocumentMoniker": "DoorsAPI.Tests\\DoorsControllerTests.cs",
               "ToolTip": "C:\\Users\\cardg\\source\\repos\\ISMTest\\ISM-Tech-Test\\API\\DoorsAPI\\DoorsAPI.Tests\\DoorsControllerTests.cs",
               "RelativeToolTip": "DoorsAPI.Tests\\DoorsControllerTests.cs",
-              "ViewState": "AQIAACkAAAAAAAAAAAAwwD4AAAAwAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAHMAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T17:01:23.515Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\cardg\\source\\repos\\ISMTest\\ISM-Tech-Test\\API\\DoorsAPI\\DoorsAPI\\Program.cs",
               "RelativeDocumentMoniker": "DoorsAPI\\Program.cs",
@@ -77,20 +94,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "DoorsController.cs",
               "DocumentMoniker": "C:\\Users\\cardg\\source\\repos\\ISMTest\\ISM-Tech-Test\\API\\DoorsAPI\\DoorsAPI\\Controllers\\DoorsController.cs",
               "RelativeDocumentMoniker": "DoorsAPI\\Controllers\\DoorsController.cs",
               "ToolTip": "C:\\Users\\cardg\\source\\repos\\ISMTest\\ISM-Tech-Test\\API\\DoorsAPI\\DoorsAPI\\Controllers\\DoorsController.cs",
               "RelativeToolTip": "DoorsAPI\\Controllers\\DoorsController.cs",
-              "ViewState": "AQIAABQAAAAAAAAAAAAQwC8AAAAVAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABDAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-07-23T16:49:56.266Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "Door.cs",
               "DocumentMoniker": "C:\\Users\\cardg\\source\\repos\\ISMTest\\ISM-Tech-Test\\API\\DoorsAPI\\DoorsAPI\\Models\\Door.cs",
               "RelativeDocumentMoniker": "DoorsAPI\\Models\\Door.cs",

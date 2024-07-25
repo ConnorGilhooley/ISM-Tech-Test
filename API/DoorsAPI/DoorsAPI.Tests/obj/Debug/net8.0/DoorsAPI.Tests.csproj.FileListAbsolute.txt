@@ -221,3 +221,5 @@ C:\Users\cardg\source\repos\ISMTest\ISM-Tech-Test\API\DoorsAPI\DoorsAPI.Tests\ob
 C:\Users\cardg\source\repos\ISMTest\ISM-Tech-Test\API\DoorsAPI\DoorsAPI.Tests\obj\Debug\net8.0\DoorsAPI.Tests.pdb
 C:\Users\cardg\source\repos\ISMTest\ISM-Tech-Test\API\DoorsAPI\DoorsAPI.Tests\obj\Debug\net8.0\DoorsAPI.Tests.genruntimeconfig.cache
 C:\Users\cardg\source\repos\ISMTest\ISM-Tech-Test\API\DoorsAPI\DoorsAPI.Tests\obj\Debug\net8.0\ref\DoorsAPI.Tests.dll
+C:\Users\cardg\source\repos\ISMTest\ISM-Tech-Test\API\DoorsAPI\DoorsAPI.Tests\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\cardg\source\repos\ISMTest\ISM-Tech-Test\API\DoorsAPI\DoorsAPI.Tests\bin\Debug\net8.0\Moq.dll

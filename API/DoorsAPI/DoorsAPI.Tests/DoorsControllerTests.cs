@@ -1,6 +1,7 @@
 ﻿using DoorsAPI.Controllers;
 using DoorsAPI.Models;
 using Microsoft.AspNetCore.Mvc;
+using Moq;
 using System.Collections.Generic;
 using Xunit;
 
@@ -8,12 +9,45 @@ namespace DoorManagementAPI.Tests
 {
     public class DoorsControllerTests
     {
-        private readonly DoorsController _controller;
+        private readonly Mock<IDoorsController> _mockController;
+        private readonly IDoorsController _controller;
 
         public DoorsControllerTests()
         {
             // Arrange
-            _controller = new DoorsController();
+            _mockController = new Mock<IDoorsController>();
+            _controller = _mockController.Object;
+
+            // Setup initial mock data
+            var doors = new List<Door>
+            {
+                new Door { Id = 0, Name = "Door One", IsOpen = "Open", IsLocked = "Unlocked", IsAlarmed = "Inactive" },
+                new Door { Id = 1, Name = "Door Two", IsOpen = "Closed", IsLocked = "Unlocked", IsAlarmed = "Inactive" },
+                new Door { Id = 2, Name = "Door Three", IsOpen = "Closed", IsLocked = "Locked", IsAlarmed = "Alarmed" }
+            };
+
+            _mockController.Setup(m => m.GetDoors()).Returns(new ActionResult<IEnumerable<Door>>(doors));
+            _mockController.Setup(m => m.GetDoor(It.IsAny<int>())).Returns((int id) =>
+            {
+                var door = doors.FirstOrDefault(d => d.Id == id);
+                if (door != null)
+                {
+                    return new ActionResult<Door>(door);
+                }
+                return new ActionResult<Door>(new NotFoundResult());
+            });
+            _mockController.Setup(m => m.UpdateDoor(It.IsAny<int>(), It.IsAny<Door>())).Returns((int id, Door updatedDoor) =>
+            {
+                var door = doors.FirstOrDefault(d => d.Id == id);
+                if (door != null)
+                {
+                    door.IsOpen = updatedDoor.IsOpen;
+                    door.IsLocked = updatedDoor.IsLocked;
+                    door.IsAlarmed = updatedDoor.IsAlarmed;
+                    return new OkResult();
+                }
+                return new NotFoundResult();
+            });
         }
 
         [Fact]

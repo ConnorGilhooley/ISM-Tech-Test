@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("DoorsAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ce140076d3f37b7a36b1b101af6e1c69bcc2d8b0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3611e67b35d94c1ff612a8f0c5480e589b4e8c0f")]
 [assembly: System.Reflection.AssemblyProductAttribute("DoorsAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("DoorsAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

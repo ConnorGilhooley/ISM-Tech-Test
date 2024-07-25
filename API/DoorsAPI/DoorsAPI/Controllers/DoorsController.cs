@@ -21,7 +21,7 @@ namespace DoorsAPI.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<Door>> GetDoors()
         {
-            return doors;
+            return new OkObjectResult(doors);
         }
 
         [HttpGet("{id}")]
